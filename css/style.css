@@ -1,0 +1,124 @@
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+
+body {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 315%;
+  margin: 50px;
+  background: url(../wood.jpg) no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+
+}
+
+.content {
+  margin: 20px auto;
+  background-image: url("../homeless.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 15px;
+  height: 900px;
+  border-radius: 10px;
+  line-height: 120%;
+
+}
+
+.addresses {
+  float: left;
+  width: 50%;
+  display: inline-block;
+  margin: auto;
+
+}
+
+form {
+  margin: auto;
+  text-align: center;
+}
+
+.contacts {
+  float: left;
+  display: inline-block;
+  width: 50%;
+  margin: auto;
+}
+
+
+h1 {
+  font-size: 55px;
+  text-align: center;
+  margin: auto;
+}
+
+h2 {
+  font-size: 40px;
+  margin: auto;
+  text-align: center;
+}
+
+input {
+  width: 150px!important;
+  margin: auto;
+  text-align: center;
+  background-color: transparent!important;
+  font-size: 30px!important;
+  border: 1px solid #fff!important;
+  height: 50px!important;
+}
+
+button {
+  background-color: #fff;
+  font-size: 20px!important;
+}
+
+li {
+  list-style-type: none;
+  margin: auto;
+  text-align: center;
+}
+
+li:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.contact-info {
+  display: none;
+}
+
+input#new-notes {
+  height: 100px!important;
+  width: 200px!important;
+}
+
+p {
+  margin: auto;
+  padding: 15px;
+}
